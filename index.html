@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Exercice "Card" – Formation Développer des interfaces web accessibles par
+      Warren Walter
+    </title>
+
+    <link rel="stylesheet" href="card.css" />
+  </head>
+  <body>
+    <!-- 
+        Instructions :
+
+        1. Télécharger le code source : OK
+        2. Ne rien touchez dans <head>
+        3. Les textes : "Camping", "Randonnée" et "voir" doivent être des liens
+        4. La "card" doit être accessible :
+            4.1. Vous pouvez utliser n'importe quelles balises HTML tant qu'elles améliorent l'accessibilité
+            4.2. Ne pas toucher à <main>
+            4.3. Le CSS peut / doit être fait aussi
+        5. Le chiffre 252 représente le nombre de commentaires
+        6. La "card" fait 300px de large
+
+        ------------
+        Code couleur
+        ------------
+        Blanc : #FFFFFF
+        Noir : #000000
+        Vert : #D8E9D2
+        Gris foncé : #808080
+        Gris clair : #F3F3F3
+    -->
+
+    <main class="main" id="main">
+      <div class="card">
+        <div class="card-img">
+          <img src="lac.jpg" alt="bateau sur l'eau en pleine montagne" />
+        </div>
+        <div class="card-header">
+          <div class="card-header-title">
+            <span class="tag">Randonnée</span>
+            <span class="tag">Camping</span>
+          </div>
+          <div class="card-header-social">
+            <ul class="resetul">
+              <li><span class="star">&#9733;</span> 4,5 / 5</li>
+              <li><span class="heart">&#10084;</span>252</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-content">
+          <h4>Park Sexten en caravane</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt consectetur adipiscing elitsed do eiusmod.
+          </p>
+        </div>
+        <div class="card-footer">
+          <span class="price">125 €</span>
+          <a href="#">Voir</a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

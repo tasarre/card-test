@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh; /* Pour centrer la .card c'est plus jolie */
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #111;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --green: #d8e9d2;
+  --dark-grey: #888;
+  --light-grey: #f3f3f3;
+  --shadow: 0 2px 20px rgba(136, 136, 136, 0.35);
+}
+
+.card {
+  width: 300px;
+  box-shadow: var(--shadow);
+  -webkit-box-shadow: var(--shadow);
+  -moz-box-shadow: var(--shadow);
+  border-radius: 15px;
+  overflow: hidden;
+  background: linear-gradient(
+    184deg,
+    rgba(136, 136, 136, .1) 0%,
+    rgba(243, 243, 243, .3) 100%
+  );
+}
+.tag {
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+}
+.tag:before {
+  content: "";
+  position: absolute;
+  height: 7px;
+  width: 100px;
+  top: 13px;
+  right: 0px;
+  background-color: var(--green);
+  z-index: -1;
+}
+.resetul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.card-img {
+}
+
+.card-img img {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+
+.card-header,
+.card-content,
+.card-footer {
+  padding: 0 20px;
+}
+
+.card-header {
+}
+
+.card-header-title {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.card-header-social ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-header-social .star {
+  color: var(--dark-grey);
+}
+
+.card-content {
+}
+
+.card-footer {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-footer .price {
+  font-size: 20px;
+  margin-right: 15px;
+  font-weight: 700;
+}
+.card-footer a {
+  text-decoration: none;
+  color: var(--black);
+  background-color: var(--green);
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+
+
+}
